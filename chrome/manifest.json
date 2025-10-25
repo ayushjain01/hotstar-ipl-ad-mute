@@ -6,11 +6,11 @@
   "permissions": [
     "storage",
     "tabs",
-    "webRequest",
-    "webRequestBlocking"
+    "webRequest"
   ],
   "host_permissions": [
-    "*://*.hotstar.com/*"
+    "*://*.hotstar.com/*",
+    "*://bifrost-api.hotstar.com/*"
   ],
   "background": {
     "service_worker": "background.js"
