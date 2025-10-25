@@ -1,18 +1,25 @@
 {
   "manifest_version": 3,
   "name": "Hotstar Ad Muter",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Mute Hotstar ads",
   "permissions": [
+    "storage",
+    "tabs",
     "webRequest",
-    "tabs"
+    "webRequestBlocking"
   ],
-  "host_permissions": ["*://*.hotstar.com/*"],
+  "host_permissions": [
+    "*://*.hotstar.com/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "icons": {
     "48": "48.png",
     "128": "128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
   }
 }

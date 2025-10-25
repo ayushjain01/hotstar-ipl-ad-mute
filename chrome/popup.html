@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotstar Ad Muter</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <header>
+    <img src="48.png" alt="Hotstar Ad Muter Icon" />
+    <h1>Hotstar Ad Muter</h1>
+  </header>
+
+  <section class="settings">
+    <label class="switch-label">
+      <span>Mute All Ads</span>
+      <label class="switch">
+        <input type="checkbox" id="muteAllToggle" />
+        <span class="slider"></span>
+      </label>
+    </label>
+  </section>
+
+  <section class="ad-section">
+    <h2>Blocked Ad IDs</h2>
+    <ul id="adList"></ul>
+
+    <div class="add-form">
+      <input type="text" id="newAdId" placeholder="Add new Ad ID" />
+      <button id="addAdBtn">Add</button>
+    </div>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
