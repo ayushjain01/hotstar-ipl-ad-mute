@@ -1,19 +1,26 @@
 {
   "manifest_version": 2,
   "name": "Hotstar Ad Muter",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Mute Hotstar ads",
   "icons": {
     "48": "48.png",
     "128": "128.png"
   },
   "permissions": [
+    "storage",
     "tabs",
     "webRequest",
-    "*://*.hotstar.com/*"
+    "webRequestBlocking",
+    "*://*.hotstar.com/*",
+    "*://bifrost-api.hotstar.com/*"
+
   ],
   "background": {
     "scripts": ["background.js"],
     "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
   }
 }
